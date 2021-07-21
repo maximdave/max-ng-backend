@@ -8,10 +8,12 @@ const app = express();
 
 pgConnection();
 
+const PORT = process.env.PORT || 8085
 app.use(express.json());
 app.use('/', router);
 app.use('/', indexRouter);
 
-app.listen(3000, () => {
+
+app.listen(PORT, () => {
   console.log('Now running on port 3000');
 });
