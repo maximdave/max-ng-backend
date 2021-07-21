@@ -8,12 +8,12 @@ dotenv.config();
 export const pgConnection = async () => {
     try {
       await createConnection({
-        type: 'postgres',
-        host: 'localhost',
+        type: process.env.TYPEORM_TYPE as 'postgres',
+        host: process.env.TYPEORM_HOST,
         port: 5431,
-        username: 'decagon',
-        password: '1234',
-        database: 'maxng',
+        username: process.env.TYPEORM_USERNAME,
+        password: process.env.TYPEORM_PASSWORD,
+        database: process.env.TYPEORM_DATABASE,
         entities: [CommentModel, MovieModel],
         synchronize: true,
       });
