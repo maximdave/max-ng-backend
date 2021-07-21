@@ -1,5 +1,5 @@
-import { CommentModel } from '../models/CommentModel';
-import { MovieModel } from '../models/MovieModel';
+import { CommentModel } from '../entity/CommentModel';
+import { MovieModel } from '../entity/MovieModel';
 import { createConnection } from 'typeorm';
 
 import dotenv from 'dotenv';

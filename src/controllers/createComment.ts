@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { CommentModel } from "../models/CommentModel";
-import { MovieModel } from "../models/MovieModel";
+import { CommentModel } from "../entity/CommentModel";
+import { MovieModel } from "../entity/MovieModel";
 
 export const commentOnMovie = async (
   req: Request,

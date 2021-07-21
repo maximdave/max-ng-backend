@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import axios from 'axios';
 // import { WarRes } from 'src/interface/interface';
-import { MovieModel } from '../models/MovieModel';
+import { MovieModel } from '../entity/MovieModel';
 import { createQueryBuilder } from 'typeorm';
 
 export const movieList = async (
