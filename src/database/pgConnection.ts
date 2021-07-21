@@ -9,6 +9,7 @@ export const pgConnection = async () => {
   try {
     await createConnection({
       type: 'postgres',
+      url: process.env.DATABASE_URL,
       entities: [CommentModel, MovieModel],
       synchronize: true,
       ssl: {
