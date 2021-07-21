@@ -30,7 +30,7 @@ see env-example for environment variables
 
 ## Work-done
 
-### Created Endpoints for:
+### Created Endpoints for
 
 - Getting Movie information and comment count
 - Getting Character Information, sorting and filtering by name, height or gender.
