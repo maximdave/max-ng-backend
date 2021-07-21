@@ -1,6 +1,8 @@
 import express from 'express';
 import router from './routes/movieRoutes';
 import { pgConnection } from './database/pgConnection';
+import dotenv from 'dotenv';
+dotenv.config();
 const app = express();
 
 pgConnection();

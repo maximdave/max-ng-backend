@@ -2,6 +2,9 @@ import { CommentModel } from '../models/CommentModel';
 import { MovieModel } from '../models/MovieModel';
 import { createConnection } from 'typeorm';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 export const pgConnection = async () => {
     try {
       await createConnection({
